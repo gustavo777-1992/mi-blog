@@ -1,0 +1,141 @@
+/* --- ESTILOS GENERALES Y BASE --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* --- CABECERA (HEADER) --- */
+header {
+    background-color: #1f2937;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 0.5rem 0 0 0;
+    color: #9ca3af;
+    font-size: 1.1rem;
+}
+
+/* --- MENÚ DE NAVEGACIÓN --- */
+nav {
+    background-color: #374151;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #3b82f6;
+}
+
+/* --- CONTENEDOR PRINCIPAL (GRID) --- */
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* --- ARTÍCULOS --- */
+article {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+article h2 {
+    margin-top: 0;
+    color: #1f2937;
+}
+
+.meta {
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin-bottom: 1rem;
+}
+
+/* --- BOTONES --- */
+.btn {
+    display: inline-block;
+    background-color: #3b82f6;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background-color: #2563eb;
+}
+
+/* --- BARRA LATERAL (ASIDE) --- */
+aside {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    height: fit-content;
+}
+
+aside h3 {
+    margin-top: 0;
+    border-bottom: 2px solid #f3f4f6;
+    padding-bottom: 0.5rem;
+    color: #1f2937;
+}
+
+/* --- ETIQUETAS DE TECNOLOGÍAS --- */
+.tags span {
+    display: inline-block;
+    background-color: #e5e7eb;
+    color: #374151;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    margin: 0.2rem;
+}
+
+/* --- PIE DE PÁGINA (FOOTER) --- */
+footer {
+    background-color: #1f2937;
+    color: #9ca3af;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+}
+
+/* --- DISEÑO RESPONSIVO --- */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
